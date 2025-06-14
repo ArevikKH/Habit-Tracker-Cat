@@ -1,0 +1,218 @@
+body {
+  width: 500px;
+  height: 200px;
+  background-color: #ffeba3;
+  background-size: 300px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#aneliqneri-list {
+  list-style-type: none;
+}
+
+input[type="text"] {
+  background-color: #ffeba3;
+  color: #94795d;
+  padding: 6px 10px;
+  border: 2px solid #94795d;
+  border-radius: 8px;
+  font-family: Florence, cursive;
+  outline: none;
+  height: 26px;
+  width: 320px;
+}
+input[type="text"]:focus {
+  border: 3px solid #fbc8a6;
+}
+
+::placeholder {
+  color: #c79b82;
+}
+
+input[type="text"] {
+  transform: translateX(115px);
+}
+
+h2 {
+  font-size: 40px;
+  font-family: Impact, Charcoal, sans-serif;
+  color: #94795d;
+  text-shadow: 2px 2px 0 #c79b82, 4px 4px 0 #fbc8a6;
+}
+h2 {
+  transform: translateX(170px);
+}
+
+#knopka {
+  transform: translateX(135px);
+}
+
+#knopka {
+  color: #c79b82;
+  background-color: #fcd4a5;
+  border-radius: 12px;
+  border: 2px solid #fbc8a6;
+  font-size: 20px;
+  padding: 6px 6px;
+  outline: none;
+  box-shadow: 0 5px #c79b82;
+}
+
+#knopka:focus {
+  border: 2px solid #f9bca7;
+}
+#knopka:hover {
+  background-color: #fbc8a6;
+}
+#knopka:active {
+  box-shadow: 0 3px #94795d;
+  transform: translate(135px, 4px);
+}
+
+p {
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #94795d;
+}
+
+#bacatrutyun {
+  font-size: 18px;
+  transform: translateX(150px);
+}
+
+#bacatrutyun2 {
+  text-align: center;
+  transform: translateX(120px);
+}
+
+#aneliqneri-list {
+  transform: translateX(-110px);
+  font-family: Florence, cursive;
+  color: #94795d;
+  width: 600px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.jnjeluknopka {
+  background: #fbc8a6;
+  margin-left: 10px;
+  outline: none;
+  border-radius: 12px;
+  box-shadow: 0 4px #c79b82;
+  color: #94795d;
+  border: 1px solid #fcd4a5;
+  width: 28px;
+  height: 28px;
+  font-size: 20px;
+  /*   padding: 1.75px 4px; */
+  padding: 8px -4px;
+}
+.jnjeluknopka:focus {
+  border: 1.5px solid #f9bca7;
+}
+.jnjeluknopka:hover {
+  background-color: #fcd4a5;
+}
+
+.jnjeluknopka:active {
+  box-shadow: 0 3px #94795d;
+  transform: translateY(2px);
+}
+
+.inputikorel {
+  display: none;
+}
+
+/* checkboxi hamar */
+
+/* Customize the label (the container) */
+.container {
+  /*   display: block; */
+  position: relative;
+  padding-left: 70px;
+  /*   padding-bottom: -12px; */
+  /*   margin-bottom: -12px; */
+  cursor: pointer;
+  /*     font-size: 22px; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 65px;
+  background-color: transparent;
+  background-size: cover;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when unchecked */
+.container input ~ .checkmark:after {
+  display: block;
+  /*  Չընտրված  */
+  background-image: url(https://res.cloudinary.com/kotyi/image/upload/v1592411033/sovorutyunner/%D0%91%D0%B5%D0%B7_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F70_20200617201245_mxw0zo.png);
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+  /*  Ընտրված  */
+  background-image: url(https://res.cloudinary.com/kotyi/image/upload/v1592411039/sovorutyunner/%D0%91%D0%B5%D0%B7_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F70_20200617201238_nhlon6.png);
+}
+
+/* Show the checkmark when indeterminate */
+.container input:indeterminate ~ .checkmark:after {
+  display: block;
+  /*  Միջանկյալ  */
+  background-image: url(https://res.cloudinary.com/kotyi/image/upload/v1592411022/sovorutyunner/%D0%91%D0%B5%D0%B7_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F70_20200617201228_cpoi4m.png);
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 0px;
+  top: 0px;
+  width: 120px;
+  height: 65px;
+  background-size: cover;
+}
+
+.li {
+  transform: translateX(100px);
+  font-size: 25px;
+}
